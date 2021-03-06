@@ -14,7 +14,6 @@ module "documentdb" {
 
 	docdb_instance_class = "db.t3.medium"
 
-	# nao pode conter "@" ou "/"
 	docdb_password = "****************"
 
 	docdb_sg_cidrs = ["127.0.0.1/32"]
