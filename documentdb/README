@@ -1,0 +1,29 @@
+##############################################################
+# 
+# Description: Terraform to create DocumentDB on AWS
+# 
+##############################################################
+
+1- Copy the directory docomentdb to a new directory:  
+	# cp -a documentdb documentdb-lab
+
+2- On the new directory follow the next steps
+
+3- Edit the file "terraform" and change the variables
+
+	TERRAFORM="/bin/terraform_0.12.xx"
+	export AWS_REGION=us-east-1
+	export AWS_PROFILE=xxx
+	export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
+
+4- Edit the file main.tf and setup the variables
+
+5- Edit the file backend.tf e setup the s3 bucket and key for the tfstate file
+
+6- Run: 
+
+# ./terraform plan
+
+# ./terraform apply
+
+7- Change the database password on aws console
